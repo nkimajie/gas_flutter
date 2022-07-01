@@ -4,6 +4,17 @@ import 'package:shopping_cart/screens/screens.dart';
 
 Route<dynamic> generateRoute(RouteSettings settings) {
   switch (settings.name) {
+    case Routes.homePage:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: const HomeScreen(),
+      );
+
+    case Routes.successPage:
+      return _getPageRoute(
+        routeName: settings.name,
+        viewToShow: const SuccessScreen(),
+      );
     case Routes.topup:
       return _getPageRoute(
         routeName: settings.name,

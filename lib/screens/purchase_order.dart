@@ -275,7 +275,7 @@ class _PurchaseOrderState extends State<PurchaseOrder> {
             GestureDetector(
               onTap: () => Navigator.pushNamed(
                 context,
-                Routes.topup,
+                Routes.successPage,
               ),
               child: AppButtons(
                 text: 'Continue',
