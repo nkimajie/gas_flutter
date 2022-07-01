@@ -103,12 +103,18 @@ class HomeScreen extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(
-                            child: AppButtons(
-                              text: 'Add Cylinder',
-                              size: double.infinity,
-                              color: AppColors.white,
-                              backgroundColor: AppColors.mainColor,
-                              borderColor: AppColors.mainColor,
+                            child: GestureDetector(
+                              onTap: () => Navigator.pushNamed(
+                                context,
+                                Routes.topup,
+                              ),
+                              child: AppButtons(
+                                text: 'Add Cylinder',
+                                size: double.infinity,
+                                color: AppColors.white,
+                                backgroundColor: AppColors.mainColor,
+                                borderColor: AppColors.mainColor,
+                              ),
                             ),
                           ),
                           const Gap(10),
@@ -215,9 +221,9 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Container(
+                                  const SizedBox(
                                     width: 50,
-                                    child: const Image(
+                                    child: Image(
                                       image: AssetImage('assets/oando.png'),
                                     ),
                                   ),
@@ -261,9 +267,9 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Container(
+                                  const SizedBox(
                                     width: 50,
-                                    child: const Image(
+                                    child: Image(
                                       image: AssetImage('assets/oando.png'),
                                     ),
                                   ),
@@ -307,9 +313,9 @@ class HomeScreen extends StatelessWidget {
                             children: [
                               Row(
                                 children: [
-                                  Container(
+                                  const SizedBox(
                                     width: 50,
-                                    child: const Image(
+                                    child: Image(
                                       image: AssetImage('assets/oando.png'),
                                     ),
                                   ),
@@ -378,7 +384,7 @@ class HomeScreen extends StatelessWidget {
                               width: 120,
                               height: 30,
                               decoration: BoxDecoration(
-                                color: Color(0xffFEE498),
+                                color: const Color(0xffFEE498),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: const Center(
@@ -418,7 +424,7 @@ class HomeScreen extends StatelessWidget {
                               width: 200,
                               height: 30,
                               decoration: BoxDecoration(
-                                color: Color(0xffFEE498),
+                                color: const Color(0xffFEE498),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: const Center(
